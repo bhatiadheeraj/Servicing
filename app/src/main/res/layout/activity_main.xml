@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.servicing.MainActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="130dp"
+        android:id="@+id/checkbox"
+        android:src="@drawable/checked"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Recieved"
+        android:id="@+id/order_recieved"
+        android:textColor="#8E6FC2"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/checkbox"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Overview"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/order_recieved"
+        android:paddingTop="35dp"
+        android:id="@+id/order_overview"
+        android:textColor="#484848" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E1E1E1"
+        android:id="@+id/div1"
+        android:layout_below="@+id/order_overview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER ID"
+        android:textColor="@color/secondary_text"
+        android:layout_below="@id/div1"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:id="@+id/orderid_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#434d3234"
+        android:textColor="@color/primary_dark"
+        android:textSize="20dp"
+        android:id="@+id/order_id_no"
+        android:layout_alignBottom="@+id/orderid_label"
+        android:layout_alignRight="@+id/div1"
+        android:layout_alignEnd="@+id/div1" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:id="@+id/div2"
+        android:layout_below="@+id/order_id_no"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="ETA"
+        android:textColor="#707070"
+        android:paddingTop="20dp"
+        android:id="@+id/eta_label"
+        android:layout_below="@+id/orderid_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 min"
+        android:textSize="20dp"
+        android:textColor="@color/primary_dark"
+        android:id="@+id/time"
+        android:layout_above="@+id/div3"
+        android:layout_toRightOf="@+id/order_recieved"
+        android:layout_toEndOf="@+id/order_recieved" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:id="@+id/div3"
+        android:layout_below="@+id/eta_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="TOTAL"
+        android:paddingTop="20dp"
+        android:id="@+id/total"
+        android:layout_below="@+id/eta_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$500"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_dark"
+        android:id="@+id/cost"
+        android:layout_above="@+id/btn"
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignStart="@+id/time" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textStyle="bold"
+        android:background="@color/primary"
+        android:textColor="#ffffff"
+        android:id="@+id/btn"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/total"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

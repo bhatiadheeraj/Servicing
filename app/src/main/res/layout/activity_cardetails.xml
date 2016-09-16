@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.servicing.cardetails"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAR DETAILS"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@color/divider"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:id="@+id/view" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make"
+        android:id="@+id/Make"
+        android:textColor="@color/primary_text"
+        android:textSize="16dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/title"
+        android:paddingTop="25dp"/>
+    <EditText
+        android:id="@+id/make_edit"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+        android:layout_height="30dp"
+        android:textColorHint="#333333"
+        android:background="#ececec"
+        android:maxLines="1"
+        android:layout_above="@+id/Model"
+        android:layout_toEndOf="@+id/registration"
+        android:layout_toRightOf="@+id/registration" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model"
+        android:id="@+id/Model"
+        android:textColor="@color/primary_text"
+        android:textSize="16dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/Make"
+        android:paddingTop="10dp"/>
+    <EditText
+        android:id="@+id/model_edit"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColorHint="#333333"
+        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+        android:background="#ececec"
+        android:maxLines="1"
+        android:layout_above="@+id/COLOR"
+        android:layout_toEndOf="@+id/registration"
+        android:layout_toRightOf="@+id/registration" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:id="@+id/COLOR"
+        android:textColor="@color/primary_text"
+        android:textSize="16dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/Model"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/color_edit"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColorHint="#333333"
+        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+        android:background="#ececec"
+        android:maxLines="1"
+        android:layout_above="@+id/registration"
+        android:layout_toEndOf="@+id/registration"
+        android:layout_toRightOf="@+id/registration" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration No     "
+        android:id="@+id/registration"
+        android:textColor="@color/primary_text"
+        android:textSize="16dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/COLOR"
+        android:paddingTop="10dp"/>
+    <EditText
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColorHint="#333333"
+        android:background="#ececec"
+        android:maxLines="1"
+        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+        android:id="@+id/registration_edit"
+        android:paddingTop="75dp"
+        android:layout_alignBottom="@+id/registration"
+        android:layout_toRightOf="@+id/registration"
+        android:layout_toEndOf="@+id/registration" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/registration_edit"
+        android:layout_marginTop="10dp"
+        android:id="@+id/submit_card"
+        android:layout_centerHorizontal="true"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:layout_below="@+id/submit_card"
+    android:layout_marginTop="15dp"
+    android:background="#999999"
+android:id="@+id/partition"    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVED CARS"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp"
+        android:paddingTop="8dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/partition"
+        android:id="@+id/Saved_Cars_title"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/divider"
+        android:layout_alignRight="@+id/Saved_Cars_title"
+        android:layout_alignEnd="@+id/Saved_Cars_title"
+        android:layout_below="@+id/Saved_Cars_title"
+        android:layout_alignLeft="@+id/Saved_Cars_title"
+        android:layout_alignStart="@+id/Saved_Cars_title"
+        android:id="@+id/view2" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/Saved_Cars_title">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <include layout="@layout/saved_cars"  />
+
+        <include layout="@layout/saved_cars"  />
+        <include layout="@layout/saved_cars"  />
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+</RelativeLayout>
